@@ -1,0 +1,14 @@
+<%- include('partials/header.ejs') %>
+<h1>Index Page</h1>
+
+<% blogs.forEach((blog)=>{ %>
+
+  <div>
+  <img src="<%= blog.image %>">
+  <h4><%= blog.title %></h4>
+  <p><%= blog.body %></p>
+</div>
+
+<% }); %>
+
+<%- include('partials/footer.ejs') %>
